@@ -1,3 +1,29 @@
+@media (max-width: 1200px) {
+    html{
+
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body
+        {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+    .carousel {
+        img {
+            width: 600px;
+        }
+        .prev {
+            margin-left: 130px;
+        }
+        .next {
+            margin-right: 130px;
+        }
+    }
+}
 @media (max-width: 991px) {
     .promo {
         .container {
@@ -14,6 +40,60 @@
             margin-top: 25px;
         }
     }
+    .consultation {
+        .container {
+            max-width: 800px;
+        }
+    }
+    .carousel {
+        .tns-outer {
+            width: 400px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+        }
+        .prev {
+            max-width: 25px;
+            max-height: 30px;
+            margin-left: 190px;
+            img {
+                width: 21px;
+                height: 30px;
+            }
+        }
+        .next {
+            margin-right: 230px;
+        }
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            margin-top: 40px;
+            width: 580px;
+            text-align: center;
+        }
+    }
+    .catalog {
+        &__tabs {
+            li {
+                width: 135px;
+                font-size: 14px;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-item {
+            display: block;
+            margin-top: 30px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .promo {
@@ -26,6 +106,37 @@
         &__wrapper {
             flex-direction: column;
             align-items: center;
+        }
+    }
+    .consultation {
+        .container {
+            max-width: 550px;
+        }
+    }
+    .carousel {
+        .tns-outer {
+            width: 400px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+        }
+        .prev {
+            max-width: 25px;
+            max-height: 30px;
+            margin-left: 140px;
+            img {
+                width: 21px;
+                height: 30px;
+            }
+        }
+        .next {
+            margin-right: 160px;
+        }
+    }
+    .catalog {
+        .title {
+            font-size: 31px;
         }
     }
 }
@@ -43,7 +154,7 @@
     }
     .promo {
         .container {
-            max-width: 500px;
+            max-width: 450px;
             margin: 0 auto;
         }
         &__wrapper {
@@ -51,6 +162,10 @@
         }
         &__header {
             font-size: 37px;
+        }
+        .header__phone {
+            font-size: 15px;
+            margin-bottom: 10px;
         }
         &__subheader {
             font-size: 21px;
@@ -63,6 +178,67 @@
         }
         &__item {
             margin-top: 25px;
+        }
+    }
+    .consultation {
+        .title {
+            &_left {
+                font-size: 28px;
+                text-align: center;
+            }
+        }
+        &__descr {
+            margin-top: 25px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .feed-form {
+            margin: 30px 0 0 130px;
+        }
+    }
+    .carousel {
+        .tns-outer {
+            width: 300px;
+        }
+        img {
+            width: 100%;
+        }
+        .prev {
+            max-width: 25px;
+            max-height: 30px;
+            margin-left: 110px;
+            img {
+                width: 21px;
+                height: 30px;
+            }
+        }
+        .next {
+            margin-right: 140px;
+        }
+    }
+    .feed {
+        &__text {
+            width: 500px;
+        }
+    }
+    .footer {
+        &__info {
+            max-width: 337px;
+            max-height: 290px;
+        }
+    }
+    .modal {
+        max-width: 350px;
+        min-height: 380px;
+        .feed-form {
+            width: 260px;
+            input {
+                height: 42px;
+                margin-bottom: 12px;
+            }
+            &_mt25 {
+                margin-top: 17px;
+            }
         }
     }
 }
@@ -101,6 +277,10 @@
         &__header {
             font-size: 34px;
         }
+        .header__phone {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
         &__subheader {
             font-size: 18px;
         }
@@ -116,6 +296,111 @@
         }
         &__link {
             font-size: 14px;
+        }
+    }
+    .consultation {
+        &__descr {
+            font-size: 14px;
+        }
+        .feed-form {
+            width: 250px;
+            margin: 30px 0 0 35px;
+        }
+    }
+    .carousel {
+        .container {
+            max-width: 320px;
+        }
+        .tns-outer {
+            width: 170px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+        }
+        .prev {
+            width: 32px;
+            height: 36px;
+            margin-left: 90px;
+            img {
+                max-width: 15px;
+                max-height: 20px;
+            }
+        }
+        .next {
+            max-width: 35px;
+            max-height: 37px;
+            margin-right: 100px;
+            img {
+                max-width: 15px;
+                max-height: 20px;
+            }
+        }
+    }
+    .catalog {
+        .container {
+            width: 315px;
+        }
+        .title {
+            font-size: 18px;
+        }
+        &__tabs {
+            li {
+                margin-top: 5px;
+                display: block;
+                width: 60px;
+                font-size: 9px;
+            }
+        }
+        &-item {
+            max-width: 260px;
+        }
+    }
+    .feed {
+        &__text {
+            width: 300px;
+        }
+        .title {
+            font-size: 25px;
+        }
+    }
+    .footer {
+        &__info {
+            max-width: 280px;
+            max-height: 250px;
+            padding: 10px 53px 56px 0px;
+        }
+        &__addr {
+            margin-top: -35px;
+        }
+        &__phone {
+            margin-top: -20px;
+        }
+    }
+    .modal {
+        max-width: 240px;
+        min-height: 300px;
+        .modal__subtitle {
+            font-size: 16px;
+        }
+        .modal__descr {
+            font-size: 12px;
+        }
+        .feed-form {
+            width: 160px;
+            input {
+                height: 35px;
+                margin-bottom: 8px;
+            }
+            &_mt25 {
+                margin-top: 17px;
+            }
+            .button {
+                &_submit {
+                    height: 42px;
+                    font-size: 11px;
+                }
+            }
         }
     }
 }
